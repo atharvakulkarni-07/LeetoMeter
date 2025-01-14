@@ -14,6 +14,25 @@ Welcome to LeetoMeter, an interactive and visually appealing web application tha
 - CSS: To style the app, including animations and gradients.
 - JavaScript: For handling interactivity and API communication.
 
+## Core Functionalities
+### Usename Validation: Ensures the username adheres to a valid pattern before making API requests.
+  ```
+  function ValidateUsername(username) {
+    const regex = /^[a-zA-Z0-9_-]{1,15}$/;
+    return regex.test(username);
+  }
+  ```
+### Fetching the LeetCode data
+  ```
+async function fetchUserDetails(username) {
+    const targetUrl = 'https://leetcode.com/graphql/';
+    const requestOptions = { method: "POST", headers: myHeaders, body: graphqlQuery };
+    const response = await fetch(targetUrl, requestOptions);
+    const parsedData = await response.json();
+    displayUserData(parsedData);
+}
+  ```
+
 ## 🚀 How to Run Locally
 Follow these steps to get started with LeetoMeter on your local system:
 
