@@ -14,7 +14,7 @@ Welcome to LeetoMeter, an interactive and visually appealing web application tha
 - CSS: To style the app, including animations and gradients.
 - JavaScript: For handling interactivity and API communication.
 
-## Core Functionalities
+## 🛠️Core Functionalities
 ### Usename Validation: Ensures the username adheres to a valid pattern before making API requests.
   ```
   function ValidateUsername(username) {
